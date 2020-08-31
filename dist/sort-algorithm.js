@@ -1,5 +1,6 @@
-
-export function checkSort(arr: number[], length: number) { // 从小到大的顺序
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+function checkSort(arr, length) {
     let tmp = arr[0];
     for (let i = 1; i < length; i++) {
         if (tmp > arr[i]) {
@@ -10,17 +11,14 @@ export function checkSort(arr: number[], length: number) { // 从小到大的顺
     }
     return true;
 }
-
-
-function swap(arr: number[], a: number, b: number) {
+exports.checkSort = checkSort;
+function swap(arr, a, b) {
     let tmp = arr[a];
     arr[a] = arr[b];
     arr[b] = tmp;
     return;
 }
-
-
-export function bubbleSort(arr: number[], length: number) {
+function bubbleSort(arr, length) {
     for (let i = 0; i < length; i++) {
         for (let j = length - 1; j > i; j--) {
             if (arr[j - 1] > arr[j]) {
@@ -29,3 +27,5 @@ export function bubbleSort(arr: number[], length: number) {
         }
     }
 }
+exports.bubbleSort = bubbleSort;
+//# sourceMappingURL=sort-algorithm.js.map
